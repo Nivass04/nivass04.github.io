@@ -8,7 +8,96 @@
 body {
   background: #7492a1c9;
   overflow: hidden;
+
 }
+/* ===== HEADER NAVBAR ===== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2f3e46;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Nav container */
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Menu links */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover underline animation */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: #f4cfcf;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hover color */
+nav ul li a:hover {
+  color: #f4cfcf;
+}
+
+/* ===== OFFSET FOR FIXED HEADER ===== */
+.page {
+  padding-top: 90px;
+}
+
+/* ===== MOBILE NAV ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 
 /* Scroll container */
 .container {
