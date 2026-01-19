@@ -8,7 +8,6 @@
 body {
   background: #7492a1c9;
   overflow: hidden;
-
 }
 /* ===== HEADER NAVBAR ===== */
 
@@ -19,7 +18,7 @@ header {
   width: 100%;
   background: #2f3e46;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Nav container */
@@ -98,7 +97,6 @@ nav ul li a:hover {
   }
 }
 
-
 /* Scroll container */
 .container {
   height: 100vh;
@@ -110,7 +108,7 @@ nav ul li a:hover {
 .page {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   scroll-snap-align: start;
 }
@@ -125,8 +123,9 @@ nav ul li a:hover {
   width: 90%;
   display: flex;
   gap: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 
 .center {
   flex-direction: column;
@@ -172,7 +171,6 @@ h2 {
   height: 170px;
   border-radius: 30%;
   object-fit: cover;
-  
 }
 
 /* List */
@@ -193,6 +191,11 @@ h2 {
 .center-text {
   text-align: center;
 }
+.skills {
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .project-grid {
   display: grid;
@@ -219,19 +222,18 @@ h2 {
 
 .project-folder:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .contact {
-  display:grid;
+  display: grid;
   width: 10px;
   gap: 20%;
   height: auto;
-  
 }
 
 .contact img {
   width: 90px;
-  display:block;
+  display: block;
   padding-bottom: 10px;
 }
 .btn {
@@ -260,13 +262,11 @@ h2 {
 
 .btns {
   display: flex;
-  justify-content: center;   /* centers horizontally */
+  justify-content: center; /* centers horizontally */
   align-items: center;
   gap: 40px;
   margin-top: 30px;
 }
-
-
 
 /* Mobile */
 @media (max-width: 768px) {
